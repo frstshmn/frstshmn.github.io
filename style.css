@@ -1,0 +1,313 @@
+/*---------------------------------------
+			[VARIABLES]
+---------------------------------------*/
+
+:root {
+    --primary-color: #CFC9CF;
+    --secondary-color: #fff;
+    --grey-color: #666;
+    --dark-grey-color: #222;
+    --light-grey-color: #DDD;
+}
+
+html {
+    background: #000;
+    overflow-y: overlay;
+    overflow-x: hidden
+}
+
+a {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+hr {
+    width: 100%;
+    border-bottom: 1px solid var(--dark-grey-color);
+}
+
+
+/*---------------------------------------
+			[FONTS]
+---------------------------------------*/
+
+.font {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+
+/*---------------------------------------
+			[BACKGROUND]
+---------------------------------------*/
+
+.background-hero {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('https://media.giphy.com/media/MaThe6p8WAKbf9NDDM/source.gif');
+    --x: center;
+    --y: center;
+    background-position: var(--x) center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .background-hero {
+        background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('https://media.giphy.com/media/MaThe6p8WAKbf9NDDM/source.gif');
+        background-position: center center;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+}
+
+.background-hero-element {
+    transform: translate(0px, 0px);
+}
+
+.background-primary {
+    background-color: var(--primary-color);
+}
+
+.background-secondary {
+    background-color: var(--secondary-color);
+}
+
+.background-grey {
+    background-color: var(--grey-color);
+}
+
+.background-dark-grey {
+    background-color: var(--dark-grey-color);
+}
+
+.background-light-grey {
+    background-color: var(--light-grey-color);
+}
+
+.background-black {
+    background-color: #000000;
+}
+
+
+/*---------------------------------------
+			[COLORS]
+---------------------------------------*/
+
+.color-primary {
+    color: var(--primary-color);
+}
+
+.color-secondary {
+    color: var(--secondary-color);
+}
+
+.color-grey {
+    color: var(--grey-color);
+}
+
+.color-dark-grey {
+    color: var(--dark-grey-color);
+}
+
+.color-light-grey {
+    color: var(--light-grey-color);
+}
+
+
+/*---------------------------------------
+			[SCROLLBAR]
+---------------------------------------*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #222;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+
+/*---------------------------------------
+			[OTHER]
+---------------------------------------*/
+
+.btn-color-primary {
+    border: 4px solid var(--primary-color);
+    border-radius: 100px;
+    background-color: transparent;
+    color: var(--primary-color);
+    transition: .3s;
+}
+
+.btn-color-primary:hover {
+    border: 4px solid var(--primary-color);
+    border-radius: 100px;
+    background-color: var(--primary-color);
+    color: #111;
+    transform: translateY(-2px)
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    margin: 0;
+}
+
+.inner-shadow {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button.shadow {
+    color: var(--grey-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: .3s;
+}
+
+button.shadow:hover {
+    color: var(--secondary-color);
+    cursor: none !important;
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+button.shadow:active {
+    color: var(--light-grey-color);
+    cursor: none !important;
+    transform: translateY(4px);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.shadow {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.rounded-corner {
+    border-radius: 40px;
+}
+
+.rounded-corner-10 {
+    border-radius: 10px;
+}
+
+textarea.rounded-corner {
+    border-radius: 27px;
+}
+
+.square {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 12em;
+    width: 12em;
+    transition: .5s;
+}
+
+.square:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.cursor {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -50%;
+    left: -50%;
+    margin: 0px 0 0 0px;
+    background: url('http://spacedesign.in.ua/images/cursor.png');
+    z-index: 1000;
+    filter: invert();
+    mix-blend-mode: difference;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.progress-bar {
+    height: 100px;
+    width: 100px;
+}
+
+.fly {
+    transition: 5s;
+}
+
+.fly:hover {
+    transition: .5s;
+    color: var(--primary-color) !important;
+}
+
+.blur-10 {
+    filter: blur(10px);
+}
+
+.blur-5 {
+    filter: blur(5px);
+}
+
+.back-image {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#discord_toast .color-primary {
+    color: #7289DA;
+}
+
+#discord_toast .color-dark-black {
+    color: #23272A;
+}
+
+#discord_toast .color-black {
+    color: #2C2F33;
+}
+
+#discord_toast .bg-color-primary {
+    background-color: #7289DA;
+}
+
+#discord_toast .bg-color-dark-black {
+    background-color: #23272A;
+}
+
+#discord_toast .bg-color-black {
+    background-color: #2C2F33;
+}
+
+@keyframes rotate-shuriken {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
