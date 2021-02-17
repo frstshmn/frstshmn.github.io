@@ -159,6 +159,38 @@ hr {
     transform: translateY(-2px)
 }
 
+.btn-color-primary.discord {
+    border: 4px solid #7289DA;
+    border-radius: 100px;
+    background-color: transparent;
+    color: #7289DA;
+    transition: .3s;
+}
+
+.btn-color-primary.discord:hover {
+    border: 4px solid #7289DA;
+    border-radius: 100px;
+    background-color: #7289DA;
+    color: #111;
+    transform: translateY(-2px)
+}
+
+.btn-color-primary.telegram {
+    border: 4px solid #38a8ca;
+    border-radius: 100px;
+    background-color: transparent;
+    color: #38a8ca;
+    transition: .3s;
+}
+
+.btn-color-primary.telegram:hover {
+    border: 4px solid #38a8ca;
+    border-radius: 100px;
+    background-color: #38a8ca;
+    color: #111;
+    transform: translateY(-2px)
+}
+
 .vh-100 {
     height: 100vh;
 }
