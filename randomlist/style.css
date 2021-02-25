@@ -1,0 +1,27 @@
+body {
+	font-family: 'Montserrat';
+}
+
+.button{
+	color: #fff;
+    cursor: pointer;
+    border: none;
+    background-size: 300% 100%;
+	border-radius: 100px;
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.button:hover{
+	background-position: 100% 0;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.fly {
+    transition: 5s;
+}
