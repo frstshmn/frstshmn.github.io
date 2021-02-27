@@ -96,27 +96,27 @@ function randomize(){
     
     let random_interval = setInterval(function () {
         $(".random-element").remove();
-        $('#result').append('<div class="h6 text-center random-element">' + list[Math.floor((Math.random() * list.length) - 0)] + '</div>')
+        $('#result').append('<div class="h6 text-center random-element"><kbd>' + list[Math.floor((Math.random() * list.length) - 0)] + '</kbd></div>')
         i++;
         if (i == 20){
             clearInterval(random_interval);
             i = 0;
             random_interval = setInterval(function () {
                 $(".random-element").remove();
-                $('#result').append('<div class="h6 text-center random-element">' + list[Math.floor((Math.random() * list.length) - 0)] + '</div>')
+                $('#result').append('<div class="h6 text-center random-element"><kbd>' + list[Math.floor((Math.random() * list.length) - 0)] + '</kbd></div>')
                 i++;
                 if (i == 5){
                     clearInterval(random_interval);
                     i = 0;
                     random_interval = setInterval(function () {
                         $(".random-element").remove();
-                        $('#result').append('<div class="h6 text-center random-element">' + list[Math.floor((Math.random() * list.length) - 0)] + '</div>')
+                        $('#result').append('<div class="h6 text-center random-element"><kbd>' + list[Math.floor((Math.random() * list.length) - 0)] + '</kbd></div>')
                         i++;
                         if (i == 5){
                             clearInterval(random_interval);
                             i = 0;
                             $(".random-element").remove();
-                            $('#result').append('<div class="h6 font-weight-bold text-center random-element text-warning">' + list[Math.floor((Math.random() * list.length) - 0)] + '</div>')
+                            $('#result').append('<div class="h6 font-weight-bold text-center random-element"><kbd class="final">' + list[Math.floor((Math.random() * list.length) - 0)] + '</kbd></div>')
                         }
                     }, 250);
                 }

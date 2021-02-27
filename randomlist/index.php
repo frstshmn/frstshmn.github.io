@@ -20,7 +20,7 @@
 	<body>
 		<div class="container">
 			<div class="row">
-				<div class="col-12 text-center my-3">
+				<div class="col-12 text-center my-5">
 					<h1 class="font-weight-bold">List Randomizer</h1>
 				</div>
 			</div>
