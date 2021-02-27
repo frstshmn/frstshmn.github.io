@@ -19,6 +19,7 @@ body {
 }
 
 .button:hover{
+    color: #fff !important;
 	background-position: 100% 0;
 }
 
