@@ -1,6 +1,6 @@
 let list = [
     'Animals',
-    'Audio & Video',
+    'Anime',
     'Automotive',
     'Autumn',
     'Beverage',
