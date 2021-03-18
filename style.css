@@ -73,7 +73,7 @@ hr {
 ---------------------------------------*/
 
 .background-hero {
-    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('http://spacedesign.in.ua/images/background.png');
+    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('images/background.png');
     --x: 0px;
     --y: 0px;
     background-position: var(--x) var(--y);
@@ -246,7 +246,7 @@ textarea.rounded-corner {
     top: -50%;
     left: -50%;
     margin: 0px 0 0 0px;
-    background: url('http://spacedesign.in.ua/images/cursor.png');
+    background: url('images/cursor.png');
     z-index: 1000;
     filter: invert();
     mix-blend-mode: difference;
