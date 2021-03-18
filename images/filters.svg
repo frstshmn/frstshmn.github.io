@@ -1,0 +1,3 @@
+<filter id="morph">
+<feMorphology id="morph-value" operator="erode" in="SourceGraphic" radius="3"/>
+</filter>
