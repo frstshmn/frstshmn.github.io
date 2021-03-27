@@ -21,7 +21,7 @@ body {
     --light-grey-color: #DDD;
 }
 
-* {
+/* * {
     cursor: none;
 }
 
@@ -31,7 +31,7 @@ body {
 
 .cursor-none {
     cursor: none;
-}
+} */
 
 html {
     background: #000;
