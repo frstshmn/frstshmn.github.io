@@ -1,42 +1,33 @@
-/*
-Theme Name: theme for frstshmn
-Version: 105.1
-Author: frstshmn
-*/
-
-
 /*---------------------------------------
 			[VARIABLES]
 ---------------------------------------*/
 
 body {
-    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
+.background-hero{
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('images/background.jpg');
+    --x: 0px;
+    --y: 0px;
+    background-position: var(--x) var(--y);
+    background-size: cover;
+    overflow-x: hidden;
+}
+/* #576241 */
 :root {
-    --primary-color: #7f7051;
+    --primary-color: #27352a;
     --secondary-color: #fff;
     --grey-color: #666;
-    --dark-grey-color: #222;
+    --dark-grey-color: #444;
     --light-grey-color: #DDD;
 }
 
-/* * {
-    cursor: none;
-}
-
-*:hover {
-    cursor: none;
-}
-
-.cursor-none {
-    cursor: none;
-} */
-
 html {
-    background: #000;
+    background: #fff;
     overflow-y: overlay;
-    overflow-x: hidden
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -53,33 +44,29 @@ hr {
     border-bottom: 1px solid var(--dark-grey-color);
 }
 
+button:focus, button:active {
+    outline: none;
+}
+
 
 /*---------------------------------------
 			[FONTS]
 ---------------------------------------*/
 
 .font-primary {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
 }
 
 .font-secondary {
     line-height: 1.2em;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 
 /*---------------------------------------
 			[BACKGROUND]
 ---------------------------------------*/
-
-.background-hero {
-    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('images/background.png');
-    --x: 0px;
-    --y: 0px;
-    background-position: var(--x) var(--y);
-    background-size: cover;
-    overflow-x: hidden;
-}
 
 .background-hero-element {
     transform: translate(0px, 0px);
@@ -162,6 +149,14 @@ hr {
 			[OTHER]
 ---------------------------------------*/
 
+.nav-item a{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    color: #222;
+}
+
 .vh-100 {
     height: 100vh;
 }
@@ -215,6 +210,10 @@ textarea:focus {
     border-radius: 40px;
 }
 
+.rounded-corner-20 {
+    border-radius: 20px;
+}
+
 .rounded-corner-10 {
     border-radius: 10px;
 }
@@ -239,33 +238,13 @@ textarea.rounded-corner {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.cursor {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: -50%;
-    left: -50%;
-    margin: 0px 0 0 0px;
-    background: url('images/cursor.png');
-    z-index: 1000;
-    filter: invert();
-    mix-blend-mode: difference;
-    opacity: 1;
-    pointer-events: none;
+.text-shadow {
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .progress-bar {
     height: 100px;
     width: 100px;
-}
-
-.fly {
-    transition: 5s;
-}
-
-.fly:hover {
-    transition: .5s;
-    color: var(--primary-color) !important;
 }
 
 .blur-10 {
@@ -306,11 +285,45 @@ textarea.rounded-corner {
     background-color: #2C2F33;
 }
 
-@keyframes rotate-shuriken {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.cv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 0em 2em;
+    grid-template-areas:
+      "contacts experience experience"
+      "education skills skills"
+      "languages languages languages";
+    grid-auto-rows: minmax(min-content, max-content);
 }
+
+.cv hr{
+    background:#222222;
+    border: 0;
+    height: 2px;
+}
+
+.photo {
+    border-radius: 20px 0px 0px 20px;
+}
+.about-me { 
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.cv .contacts { grid-area: contacts; }
+.cv .experience { grid-area: experience; }
+.cv .education { grid-area: education; }
+.cv .skills { grid-area: skills; }
+.cv .languages { grid-area: languages; }
+
+.cv .cell{
+    padding: 2em;
+}
+
+/* .LI-profile-pic-container{
+    border-radius: 20px 20px 0px 0px;
+}
+.LI-badge-container-vertical-dark{
+    border-radius: 20px;
+} */
