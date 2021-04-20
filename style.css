@@ -7,7 +7,7 @@ body {
 }
 
 .background-hero{
-    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('images/background.jpg');
+    background-image: url('images/background.jpg');
     --x: 0px;
     --y: 0px;
     background-position: var(--x) var(--y);
@@ -154,7 +154,7 @@ button:focus, button:active {
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
-    color: #222;
+    color: currentColor;
 }
 
 .vh-100 {
@@ -216,6 +216,10 @@ textarea:focus {
 
 .rounded-corner-10 {
     border-radius: 10px;
+}
+.card-footer{
+    border: 5px solid var(--primary-color);
+    border-radius: 0px 0px 17px 17px !important;
 }
 
 textarea.rounded-corner {
@@ -320,6 +324,16 @@ textarea.rounded-corner {
 .cv .cell{
     padding: 2em;
 }
+
+.offers .card{
+    transition: .5s;
+}
+
+.offers .card:hover{
+
+    transform: scale(1.05);
+}
+
 
 /* .LI-profile-pic-container{
     border-radius: 20px 20px 0px 0px;

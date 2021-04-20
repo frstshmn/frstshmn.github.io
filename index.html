@@ -39,7 +39,7 @@
 	</div> -->
 	<body class="m-0 font-secondary">
 		<div class="vh-100 background-hero vertical-center p-3 mb-5 d-md-flex d-none">
-			<div class="row mx-auto font-primary color-dark-grey justify-content-center">
+			<div class="row mx-auto font-primary color-grey justify-content-center">
 				<ul class="navbar-nav d-flex flex-row my-3">
 					<li class="nav-item mx-4">
 						<a class="nav-link" href="#cv">Curriculum Vitae</a>
@@ -95,7 +95,7 @@
 				
 				<div class="px-md-5 pb-5">
 
-					<div class=" p-0 about-me d-flex flex-row justify-content-center align-items-center">
+					<div class="p-0 about-me d-flex flex-row justify-content-center align-items-center">
 						<img src="images/portrait.jpg" class="photo" width="20%" alt="My Portrait">
 						<div class="p-5">
 							<p class="text-center pb-2">My name is Volodymyr and I am <span class="font-weight-bold">web-developer</span></p>
@@ -103,8 +103,8 @@
 							<p class="font-italic small pt-3 text-center">Feel free to <a href="#contact" class="cursor-active">contact me</a>, let's make great things together!</p>
 						</div>
 					</div>
-					<button class="bg-transparent border-0 mt-4 px-1 btn-block cv_collapde_open" id="cv_collapse_button" type="button" data-toggle="collapse" data-target="#cv_collapse" aria-expanded="false" aria-controls="cv_collapse"><span class="iconify" data-inline="false" data-icon="uil:sort"></span> See more info</button>
-					<div class="collapse cv" id="cv_collapse">
+					<button class="bg-transparent border-0 mt-4 px-1 btn-block cv_collapde_open pb-5" id="cv_collapse_button" type="button" data-toggle="collapse" data-target="#cv_collapse" aria-expanded="false" aria-controls="cv_collapse"><span class="iconify" data-inline="false" data-icon="uil:sort"></span> See more info</button>
+					<div class="collapse cv pb-5" id="cv_collapse">
 						<div class="cell contacts">
 							<p class="font-primary font-weight-bold h5 title">Contacts</p>
 							<hr>
@@ -206,7 +206,7 @@
 			</div>
 		</div>
 
-		<div class="container background-primary mx-0 mw-100 px-md-5 text-white inner-shadow">
+		<div class="container background-primary mx-0 mw-100 px-md-5 text-white inner-shadow offers">
 			<!-- What I offer -->
 
 			<div class="row">
@@ -215,45 +215,53 @@
 					<p class="text-center font-secondary small text-white">What can I offer you</p>
 				</div>
 			</div>
-			<div class="row px-md-5">
-
-				<div class="offset-md-3 col-md-3 col-xs-6 p-5">
-					<div class="text-center">
-						<img src="images/web-design.svg" width="100%">
+			<div class="row px-md-5 py-5">
+				<div class="col-3">
+					<div class="card rounded-corner-20 shadow border-0">
+						<img class="card-img-top p-5" src="images/web-design.svg" width="100%" alt="Card image cap">
+						<div class="card-body color-dark-grey">
+							<h4 class="card-title text-center font-primary">Convenient websites</h4>
+							<p class="card-text small text-justify">From complex multipage websites to light landing pages - any of your idea will be realized.</p>
+						</div>
+						<div class="card-footer text-white text-center font-weight-bold font-primary background-primary">
+							from 100$
+						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-xs-6 py-5 d-flex flex-column justify-content-around">
-					<h3 class="font-weight-bold text-shadow">Convenient websites</h3>
-					<p class="small">From complex multipage websites to light landing pages - any of your idea will be realized.</p>
-				</div>
-
-				<div class="col-md-6 col-xs-6 py-5 d-flex flex-column justify-content-around text-right">
-					<h3 class="font-weight-bold text-shadow">Reactive web apps</h3>
-					<p class="small">Have any non-standard project idea? Lets realize it together using modern technologies.</p>
-				</div>
-				<div class="col-md-3 col-xs-6 p-5">
-					<div class="text-center">
-						<img src="images/website-content.svg" width="100%">
+				<div class="col-3">
+					<div class="card rounded-corner-20 shadow border-0">
+						<img class="card-img-top p-5" src="images/website-content.svg" width="100%" alt="Card image cap">
+						<div class="card-body color-dark-grey">
+							<h4 class="card-title text-center font-primary">Reactive web apps</h4>
+							<p class="card-text small text-justify">Have any non-standard project idea? Lets realize it together using modern technologies.</p>
+						</div>
+						<div class="card-footer text-white text-center font-weight-bold font-primary background-primary">
+							depends on complexity
+						</div>
 					</div>
 				</div>
-
-				<div class="offset-md-3 col-md-3 col-xs-6 p-5">
-					<div class="text-center">
-						<img src="images/shopping.svg" width="100%">
+				<div class="col-3">
+					<div class="card rounded-corner-20 shadow border-0">
+						<img class="card-img-top p-5" src="images/shopping.svg" width="100%" alt="Card image cap">
+						<div class="card-body color-dark-grey">
+							<h4 class="card-title text-center font-primary">E-commerce</h4>
+							<p class="card-text small text-justify">During COVID-19 quarantine online shops is necessary for any business to raise their efficiency and earnings.</p>
+						</div>
+						<div class="card-footer text-white text-center font-weight-bold font-primary background-primary">
+							from 700$
+						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-xs-6 py-5 d-flex flex-column justify-content-around">
-					<h3 class="font-weight-bold text-shadow">E-commerce</h3>
-					<p class="small">During COVID-19 quarantine moving to online is necessary for any enterprise, so making online shop or online catalog can raise your bussines efficiency and earnings.</p>
-				</div>
-
-				<div class="col-md-6 col-xs-6 py-5 d-flex flex-column justify-content-around text-right">
-					<h3 class="font-weight-bold text-shadow">Logo design</h3>
-					<p class="small">Is your logo modern and recognizable? Let's create new brand symbol for your business.</p>
-				</div>
-				<div class="col-md-3 col-xs-6 p-5">
-					<div class="text-center">
-						<img src="images/color-selection.svg" width="100%">
+				<div class="col-3">
+					<div class="card rounded-corner-20 shadow border-0">
+						<img class="card-img-top p-5" src="images/color-selection.svg" width="100%" alt="Card image cap">
+						<div class="card-body color-dark-grey">
+							<h4 class="card-title text-center font-primary">Logo design</h4>
+							<p class="card-text small text-justify">Is your logo modern and recognizable? Let's create new brand symbol for your business.</p>
+						</div>
+						<div class="card-footer text-white text-center font-weight-bold font-primary background-primary">
+							from 20$
+						</div>
 					</div>
 				</div>
 			</div>
@@ -273,6 +281,7 @@
 				
 			</div>
 		</div>
+
 		<div class="container background-primary mx-0 mw-100 px-md-5 text-white inner-shadow py-5">
 			<!-- What I offer -->
 
@@ -307,23 +316,10 @@
 						<p class="small">korenha.v@gmail.com</p>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-6 py-5 px-4 text-center shadow rounded-corner bg-white">
-					<div class="rounded-corner-20"><div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="ru_RU" data-type="vertical" data-theme="dark" data-vanity="korenha"><a class="LI-simple-link" href='https://ua.linkedin.com/in/korenha?trk=profile-badge'>Volodymir K.</a></div></div>
-					<!-- <p class="font-weight-bold">Email</p>
-					<form class="justify-content-center" autocomplete="off">
-						<div class="py-3">
-							<input type="text" class="w-100 p-3 background-light-grey rounded-corner border-0 inner-shadow" autocomplete="off" placeholder="Name">
-						</div>
-						<div class="py-3">
-							<input type="email" class="w-100 p-3 background-light-grey rounded-corner border-0 inner-shadow" autocomplete="off" placeholder="Email">
-						</div>
-						<div class="py-3">
-							<textarea rows="5" class="w-100 p-3 background-light-grey rounded-corner border-0 inner-shadow" autocomplete="off" placeholder="Message"></textarea>
-						</div>
-						<div class="py-3">
-							<button type="submit" class="btn rounded-corner font-primary background-dark-grey shadow font-weight-bold w-50 p-2 align-baseline"><span class="iconify mr-3 align-middle" data-inline="false" data-icon="ion:send"></span>Send</button>
-						</div>
-					</form> -->
+				<div class="col-md-4 col-xs-6 text-center">
+					<div class="LI-profile-badge rounded-corner-20" data-version="v1" data-size="medium" data-locale="ru_RU" data-type="vertical" data-theme="dark" data-vanity="korenha">
+						<a class="LI-simple-link" href='https://ua.linkedin.com/in/korenha?trk=profile-badge'>Volodymir K.</a>
+					</div>
 				</div>
 				<div class="col-md-3 col-xs-6 py-5 text-center color-dark-grey ">
 					<p class="font-weight-bold pb-2">Social</p>
@@ -332,7 +328,7 @@
 						<a href="https://github.com/frstshmn" target="_blank"><span class="cursor-active fly mx-2 iconify h2 color-dark-grey" data-inline="false" data-icon="fa-brands:github"></span></a>
 					</div>
 					<div class="py-2">
-						<a href="https://www.instagram.com/frstshmn/" target="_blank"><span class="cursor-active fly mx-2 iconify h2 color-dark-greye" data-inline="false" data-icon="fa-brands:instagram"></span></a>
+						<a href="https://www.instagram.com/frstshmn/" target="_blank"><span class="cursor-active fly mx-2 iconify h2 color-dark-grey" data-inline="false" data-icon="fa-brands:instagram"></span></a>
 						<a href="https://t.me/korenha" target="_blank"><span class="cursor-active fly mx-2 iconify h2 color-dark-grey" data-inline="false" data-icon="fa-brands:telegram"></span></a>
 					</div>
 					<div class="py-2">
@@ -344,7 +340,7 @@
 						<a href="https://www.facebook.com/frstshmn" target="_blank"><span class="cursor-active fly mx-2 iconify h2 color-dark-grey" data-inline="false" data-icon="fa-brands:facebook"></span></a>
 					</div>
 				</div>
-				<div class="small text-center mt-4 mx-auto">Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+				<div class="small text-center text-white mt-4 mx-auto">Icons made by <a href="https://www.flaticon.com/authors/eucalyp" class="text-white" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" class="text-white" title="Flaticon">www.flaticon.com</a></div>
 				<div role="alert" aria-live="assertive" id="discord_toast" aria-atomic="true" class="toast bg-transparent position-absolute border-0 rounded-corner-10" data-autohide="false" style="right: 2em; bottom: 2em;">
 					<div class="toast-header bg-color-black color-primary border-0">
 						<strong class="mr-auto font-weight-bold">Discord nickname</strong>
