@@ -38,7 +38,7 @@
 		</div>
 	</div> -->
 	<body class="m-0 font-secondary">
-		<div class="vh-100 background-hero vertical-center p-3 mb-5 d-md-flex d-none">
+		<div class="vh-100 background-hero vertical-center p-3 d-md-flex d-none">
 			<div class="row mx-auto font-primary color-grey justify-content-center">
 				<ul class="navbar-nav d-flex flex-row my-3">
 					<li class="nav-item mx-4">
@@ -82,19 +82,15 @@
 			</div>
 		</div>
 		<div class="container mx-0 mw-100 px-md-5">
-
 			<!-- CV -->
-			<div id="cv">
-
+			<div id="cv" class="py-5 my-5">
 				<div class="row">
-					<div class="col-12 py-5">
+					<div class="col-12 pb-5">
 						<p class="text-center font-primary font-weight-bold h5">Curriculum vitae</p>
 						<p class="text-center font-secondary small text-black-50">Let me introduce myself</p>
 					</div>
 				</div>
-				
-				<div class="px-md-5 pb-5">
-
+				<div class="px-md-5">
 					<div class="p-0 about-me d-flex flex-row justify-content-center align-items-center">
 						<img src="images/portrait.jpg" class="photo" width="20%" alt="My Portrait">
 						<div class="p-5">
@@ -103,8 +99,8 @@
 							<p class="font-italic small pt-3 text-center">Feel free to <a href="#contact" class="cursor-active">contact me</a>, let's make great things together!</p>
 						</div>
 					</div>
-					<button class="bg-transparent border-0 mt-4 px-1 btn-block cv_collapde_open pb-5" id="cv_collapse_button" type="button" data-toggle="collapse" data-target="#cv_collapse" aria-expanded="false" aria-controls="cv_collapse"><span class="iconify" data-inline="false" data-icon="uil:sort"></span> See more info</button>
-					<div class="collapse cv pb-5" id="cv_collapse">
+					<button class="bg-transparent border-0 mt-4 px-1 btn-block cv_collapde_open" id="cv_collapse_button" type="button" data-toggle="collapse" data-target="#cv_collapse" aria-expanded="false" aria-controls="cv_collapse"><span class="iconify" data-inline="false" data-icon="uil:sort"></span> See more info</button>
+					<div class="collapse cv" id="cv_collapse">
 						<div class="cell contacts">
 							<p class="font-primary font-weight-bold h5 title">Contacts</p>
 							<hr>
@@ -206,79 +202,165 @@
 			</div>
 		</div>
 
-		<div class="container background-primary mx-0 mw-100 px-md-5 text-white inner-shadow offers">
+		<div class="container background-primary mx-0 mw-100 px-md-5 text-white inner-shadow py-5">
 			<!-- What I offer -->
-
-			<div class="row">
-				<div class="col-12 mt-5">
-					<p class="text-center font-primary font-weight-bold h5">Services</p>
-					<p class="text-center font-secondary small text-white">What can I offer you</p>
+			<div id="services" class="py-5">
+				<div class="row">
+					<div class="col-12 pb-5">
+						<p class="text-center font-primary font-weight-bold h5">Services</p>
+						<p class="text-center font-secondary small text-white">What can I offer you</p>
+					</div>
 				</div>
-			</div>
-			<div class="row px-md-5 py-5">
-				<div class="col-3">
-					<div class="card rounded-corner-20 shadow border-0">
-						<img class="card-img-top p-5" src="images/web-design.svg" width="100%" alt="Card image cap">
-						<div class="card-body color-dark-grey">
-							<h4 class="card-title text-center font-primary">Convenient websites</h4>
-							<p class="card-text small text-justify">From complex multipage websites to light landing pages - any of your idea will be realized.</p>
+				<div class="row px-md-5 py-5">
+					<div class="col-3">
+						<div class="card rounded-corner-20 border-0">
+							<img class="card-img-top p-5" src="images/web-design.svg" width="100%" alt="Card image cap">
+							<div class="card-body color-dark-grey">
+								<h4 class="card-title text-center font-primary">Convenient websites</h4>
+								<p class="card-text small text-justify">From complex multipage websites to light landing pages - any of your idea will be realized.</p>
+							</div>
+							<div class="card-footer color-primary text-center font-weight-bold font-primary bg-white">
+								from 100$
+							</div>
 						</div>
-						<div class="card-footer text-white text-center font-weight-bold font-primary background-primary">
-							from 100$
+					</div>
+					<div class="col-3">
+						<div class="card rounded-corner-20 border-0">
+							<img class="card-img-top p-5" src="images/website-content.svg" width="100%" alt="Card image cap">
+							<div class="card-body color-dark-grey">
+								<h4 class="card-title text-center font-primary">Reactive web apps</h4>
+								<p class="card-text small text-justify">Have any non-standard project idea? Lets realize it together using modern technologies.</p>
+							</div>
+							<div class="card-footer color-primary text-center font-weight-bold font-primary bg-white">
+								depends on complexity
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card rounded-corner-20 border-0">
+							<img class="card-img-top p-5" src="images/shopping.svg" width="100%" alt="Card image cap">
+							<div class="card-body color-dark-grey">
+								<h4 class="card-title text-center font-primary">E-commerce</h4>
+								<p class="card-text small text-justify">During COVID-19 quarantine online shops is necessary for any business to raise their efficiency and earnings.</p>
+							</div>
+							<div class="card-footer color-primary text-center font-weight-bold font-primary bg-white">
+								from 700$
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card rounded-corner-20 border-0">
+							<img class="card-img-top p-5" src="images/color-selection.svg" width="100%" alt="Card image cap">
+							<div class="card-body color-dark-grey">
+								<h4 class="card-title text-center font-primary">Logo design</h4>
+								<p class="card-text small text-justify">Is your logo modern and recognizable? Let's create new brand symbol for your business.</p>
+							</div>
+							<div class="card-footer color-primary text-center font-weight-bold font-primary bg-white">
+								from 20$
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
-					<div class="card rounded-corner-20 shadow border-0">
-						<img class="card-img-top p-5" src="images/website-content.svg" width="100%" alt="Card image cap">
-						<div class="card-body color-dark-grey">
-							<h4 class="card-title text-center font-primary">Reactive web apps</h4>
-							<p class="card-text small text-justify">Have any non-standard project idea? Lets realize it together using modern technologies.</p>
-						</div>
-						<div class="card-footer text-white text-center font-weight-bold font-primary background-primary">
-							depends on complexity
-						</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="card rounded-corner-20 shadow border-0">
-						<img class="card-img-top p-5" src="images/shopping.svg" width="100%" alt="Card image cap">
-						<div class="card-body color-dark-grey">
-							<h4 class="card-title text-center font-primary">E-commerce</h4>
-							<p class="card-text small text-justify">During COVID-19 quarantine online shops is necessary for any business to raise their efficiency and earnings.</p>
-						</div>
-						<div class="card-footer text-white text-center font-weight-bold font-primary background-primary">
-							from 700$
-						</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="card rounded-corner-20 shadow border-0">
-						<img class="card-img-top p-5" src="images/color-selection.svg" width="100%" alt="Card image cap">
-						<div class="card-body color-dark-grey">
-							<h4 class="card-title text-center font-primary">Logo design</h4>
-							<p class="card-text small text-justify">Is your logo modern and recognizable? Let's create new brand symbol for your business.</p>
-						</div>
-						<div class="card-footer text-white text-center font-weight-bold font-primary background-primary">
-							from 20$
-						</div>
+				<div class="row">
+					<div class="col-12 text-center">
+						<h4 class="font-weight-bold small text-shadow">Have some special order or want to invite me to work on your project?</h4>
+						<p class="small font-italic">Just contact me in any suitable for you way</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="container mx-0 mw-100 px-md-5 inner-shadow py-5">
-			<!-- What I offer -->
-
-			<div class="row">
-				<div class="col-12">
-					<p class="text-center font-primary font-weight-bold h5">Works</p>
-					<p class="text-center font-secondary small text-black-50">My little gallery of works</p>
+		<div class="container mx-0 mw-100 px-md-5 py-5 my-5">
+			<!-- Works -->
+			<div id="works">
+				<div class="row">
+					<div class="col-12 pb-5">
+						<p class="text-center font-primary font-weight-bold h5">Works</p>
+						<p class="text-center font-secondary small text-black-50">My little exhibition</p>
+					</div>
 				</div>
-			</div>
-			<div class="row px-md-5">
-
-				
+				<ul class="nav nav-pills" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+					  	<button class="px-3 py-2 bg-white shadow border-0 small rounded-corner active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+					</li>
+					<li class="nav-item" role="presentation">
+					  	<button class="px-3 py-2 bg-white shadow border-0 small rounded-corner" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+					</li>
+					<li class="nav-item" role="presentation">
+					  	<button class="px-3 py-2 bg-white shadow border-0 small rounded-corner" id="contact-tab" data-bs-toggle="tab" data-bs-target="#cont" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">home</div>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">profile</div>
+					<div class="tab-pane fade" id="cont" role="tabpanel" aria-labelledby="contact-tab">contact</div>
+				</div>
+				<div class="row px-md-5">
+					<div class="col-12">
+						<div id="works_carousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#works_carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#works_carousel" data-slide-to="1"></li>
+								<li data-target="#works_carousel" data-slide-to="2"></li>
+								<li data-target="#works_carousel" data-slide-to="3"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="carousel-item active">
+									<div class="row">
+										<div class="col-6">
+											<img class="d-block w-75 ml-auto" src="images/sites/discovery_store.png" alt="Discovery Store">
+										</div>
+										<div class="col-4 my-auto">
+											<h4 class="font-primary h4">Discovery Store</h4>
+											<p class="small text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tempore odio facere itaque dicta alias, soluta voluptatem perspiciatis, at quod totam magnam. Quas nihil sint facilis. Eaque praesentium obcaecati enim.</p>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-6">
+											<img class="d-block w-75 ml-auto" src="images/sites/discovery_store.png" alt="Second slide">
+										</div>
+										<div class="col-6 my-auto">
+											<h4>Discovery Store</h4>
+											<p>Store </p>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-6">
+											<img class="d-block w-75 ml-auto" src="images/sites/discovery_store.png" alt="Second slide">
+										</div>
+										<div class="col-6 my-auto">
+											<h4>Discovery Store</h4>
+											<p>Store </p>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-6">
+											<img class="d-block w-75 ml-auto" src="images/sites/discovery_store.png" alt="Second slide">
+										</div>
+										<div class="col-6 my-auto">
+											<h4>Discovery Store</h4>
+											<p>Store </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#works_carousel" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon background-dark-grey" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#works_carousel" role="button" data-slide="next">
+								<span class="carousel-control-next-icon background-dark-grey" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
