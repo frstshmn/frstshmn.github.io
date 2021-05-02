@@ -359,7 +359,6 @@ textarea.rounded-corner {
 
 
 .portfolio-logo{
-    padding: 3em;
     width: 100%;
     filter: grayscale(1);
     transition: .3s;
