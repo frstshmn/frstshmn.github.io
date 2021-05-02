@@ -4,6 +4,7 @@
 
 body {
     overflow-x: hidden;
+
 }
 
 .background-hero{
@@ -174,6 +175,7 @@ button:focus, button:active {
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+
 button.shadow {
     color: var(--grey-color);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -189,6 +191,13 @@ button.shadow:active {
     color: var(--light-grey-color);
     transform: translateY(4px);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button.shadow.pressed {
+    background-color: var(--grey-color) !important;
+    color: white;
+    transform: translateY(4px);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 input:focus {
@@ -347,3 +356,19 @@ textarea.rounded-corner {
 .LI-badge-container-vertical-dark{
     border-radius: 20px;
 } */
+
+
+.portfolio-logo{
+    padding: 3em;
+    width: 100%;
+    filter: grayscale(1);
+    transition: .3s;
+    /* transition-property: filter; */
+}
+
+.portfolio-logo:hover{
+    --mouseX: 0deg;
+    --mouseY: 0deg;
+    filter: grayscale(0);
+    transform: rotateX(calc(var(--mouseY))) rotateY(calc(var(--mouseX)));
+}
