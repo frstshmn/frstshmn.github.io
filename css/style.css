@@ -358,12 +358,24 @@ textarea.rounded-corner {
 }
 
 
-/* .LI-profile-pic-container{
+
+.LI-profile-pic-container{
+    background-image: none!important;
+    background-color: var(--primary-color)!important;
     border-radius: 20px 20px 0px 0px;
 }
+
 .LI-badge-container-vertical-dark{
-    border-radius: 20px;
-} */
+    font-family: 'JetBrains Mono', monospace;
+    border-radius: 20px!important;
+}
+
+.LI-view-profile{
+    border-color: var(--primary-color)!important;
+    background-color: var(--primary-color)!important;
+    border-radius: 20px!important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
 
 
 .portfolio-logo{
