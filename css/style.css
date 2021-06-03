@@ -379,3 +379,16 @@ textarea.rounded-corner {
     filter: grayscale(0);
     transform: rotateX(calc(var(--mouseY))) rotateY(calc(var(--mouseX)));
 }
+
+.btn-github{
+    color: white!important;
+    border: 2px solid #fff;
+    border-radius: 100px;
+}
+
+.btn-github:hover{
+    color: #222!important;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 100px;
+}
