@@ -8,13 +8,21 @@ body {
 }
 
 .background-hero{
-    background-image: url('images/background.jpg');
+    background-image: url('../images/background.jpg');
     --x: 0px;
     --y: 0px;
     background-position: var(--x) var(--y);
     background-size: 101% 140%;
     overflow-x: hidden;
 }
+
+
+.background-lab{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/lab_bg.png');
+    background-position: center;
+    background-attachment: fixed;
+}
+
 /* #576241 */
 :root {
     --primary-color: #37422f;
