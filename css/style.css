@@ -39,7 +39,7 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
+a, a:link {
     font-weight: bold;
     color: var(--primary-color);
 }
