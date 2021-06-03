@@ -315,6 +315,8 @@ textarea.rounded-corner {
     grid-auto-rows: minmax(min-content, max-content);
 }
 
+
+
 .cv hr{
     background:#222222;
     border: 0;
@@ -403,4 +405,20 @@ textarea.rounded-corner {
     background-color: #fff;
     border: 2px solid #fff;
     border-radius: 100px;
+}
+
+@media only screen and (max-width: 426px) {
+    .cv {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 0em 2em;
+        grid-template-areas:
+          "contacts"
+          "experience"
+          "education"
+          "skills"
+          "languages";
+        grid-auto-rows: minmax(min-content, max-content);
+    }
 }
