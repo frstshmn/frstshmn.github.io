@@ -1,0 +1,335 @@
+body {
+	overflow-x: hidden;
+}
+.background-hero {
+	background-image: url('../images/background.jpg');
+	--x: 0px;
+	--y: 0px;
+	background-position: var(--x) var(--y);
+	background-size: 101% 140%;
+	overflow-x: hidden;
+}
+.background-lab {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/lab_bg.png');
+	background-position: center;
+	background-attachment: fixed;
+}
+&:root {
+	--primary-color: #37422f;
+	--secondary-color: #fff;
+	--grey-color: #666;
+	--dark-grey-color: #444;
+	--light-grey-color: #DDD;
+}
+html {
+	background: #fff;
+	overflow-y: overlay;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+a {
+	font-weight: bold;
+	color: var(--primary-color);
+	&:link {
+		font-weight: bold;
+		color: var(--primary-color);
+	}
+	&:hover {
+		color: var(--primary-color);
+	}
+}
+hr {
+	width: 100%;
+	border-bottom: 1px solid var(--dark-grey-color);
+}
+button {
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		outline: none;
+	}
+}
+.font-primary {
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 800;
+}
+.font-secondary {
+	line-height: 1.2em;
+	font-family: 'JetBrains Mono', monospace;
+}
+.background-hero-element {
+	transform: translate(0px, 0px);
+}
+.background-primary {
+	background-color: var(--primary-color);
+}
+.background-secondary {
+	background-color: var(--secondary-color);
+}
+.background-grey {
+	background-color: var(--grey-color);
+}
+.background-dark-grey {
+	background-color: var(--dark-grey-color);
+}
+.background-light-grey {
+	background-color: var(--light-grey-color);
+}
+.background-black {
+	background-color: #000000;
+}
+.color-primary {
+	color: var(--primary-color);
+}
+.color-secondary {
+	color: var(--secondary-color);
+}
+.color-grey {
+	color: var(--grey-color);
+}
+.color-dark-grey {
+	color: var(--dark-grey-color);
+}
+.color-light-grey {
+	color: var(--light-grey-color);
+}
+&::-webkit-scrollbar {
+	width: 5px;
+}
+&::-webkit-scrollbar-track {
+	background: transparent;
+}
+&::-webkit-scrollbar-thumb {
+	background: #222;
+	border-radius: 5px;
+	transition: .5s;
+	&:hover {
+		background: #666;
+	}
+}
+.nav-item {
+	a {
+		font-family: 'Nunito', sans-serif;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 14px;
+		color: currentColor;
+	}
+}
+.vh-100 {
+	height: 100vh;
+}
+.vertical-center {
+	display: flex;
+	flex-direction: column;
+}
+.row {
+	margin: 0;
+}
+.inner-shadow {
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button.shadow {
+	color: var(--grey-color);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	transition: .3s;
+	&:hover {
+		transform: translateY(3px);
+		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	}
+	&:active {
+		color: var(--light-grey-color);
+		transform: translateY(4px);
+		box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+}
+button.shadow.pressed {
+	background-color: var(--grey-color) !important;
+	color: white;
+	transform: translateY(4px);
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+input {
+	&:focus {
+		outline: none;
+	}
+}
+textarea {
+	&:focus {
+		outline: none;
+	}
+}
+.shadow {
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.rounded-corner {
+	border-radius: 40px;
+}
+.rounded-corner-20 {
+	border-radius: 20px;
+}
+.rounded-corner-10 {
+	border-radius: 10px;
+}
+.card-footer {
+	border: 0;
+	border-radius: 0px 0px 20px 20px !important;
+}
+textarea.rounded-corner {
+	border-radius: 27px;
+}
+.square {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 12em;
+	width: 12em;
+	transition: .5s;
+	&:hover {
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	}
+}
+.text-shadow {
+	text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.progress-bar {
+	height: 100px;
+	width: 100px;
+}
+.blur-10 {
+	filter: blur(10px);
+}
+.blur-5 {
+	filter: blur(5px);
+}
+.back-image {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+#discord_toast {
+	.color-primary {
+		color: #7289DA;
+	}
+	.color-dark-black {
+		color: #23272A;
+	}
+	.color-black {
+		color: #2C2F33;
+	}
+	.bg-color-primary {
+		background-color: #7289DA;
+	}
+	.bg-color-dark-black {
+		background-color: #23272A;
+	}
+	.bg-color-black {
+		background-color: #2C2F33;
+	}
+}
+.cv {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+	gap: 0em 2em;
+	grid-template-areas: "contacts experience experience" "education skills skills" "languages languages languages";
+	grid-auto-rows: minmax(min-content, max-content);
+	hr {
+		background: #222222;
+		border: 0;
+		height: 2px;
+	}
+	.contacts {
+		grid-area: contacts;
+	}
+	.experience {
+		grid-area: experience;
+	}
+	.education {
+		grid-area: education;
+	}
+	.skills {
+		grid-area: skills;
+	}
+	.languages {
+		grid-area: languages;
+	}
+	.cell {
+		padding: 2em;
+	}
+}
+.photo {
+	border-radius: 20px 0px 0px 20px;
+}
+.about-me {
+	background-color: white;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+}
+#services {
+	.card {
+		transition: 1s cubic-bezier(.41,.22,.18,1.01);
+		&:hover {
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+			transform: scale(1.05);
+			.card-footer {
+				opacity: 1;
+			}
+		}
+		.card-footer {
+			opacity: 0;
+			transition: 1s cubic-bezier(.41,.22,.18,1.01);
+		}
+	}
+}
+.LI-profile-pic-container {
+	background-image: none !important;
+	background-color: var(--primary-color) !important;
+	border-radius: 20px 20px 0px 0px;
+}
+.LI-badge-container-vertical-dark {
+	font-family: 'JetBrains Mono', monospace;
+	border-radius: 20px !important;
+}
+.LI-view-profile {
+	border-color: var(--primary-color) !important;
+	background-color: var(--primary-color) !important;
+	border-radius: 20px !important;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.portfolio-logo {
+	width: 100%;
+	filter: grayscale(1);
+	transition: .3s;
+	&:hover {
+		--mousex: 0deg;
+		--mousey: 0deg;
+		filter: grayscale(0);
+		transform: rotateX(calc(var(--mouseY))) rotateY(calc(var(--mouseX)));
+	}
+}
+.btn-github {
+	color: white !important;
+	border: 2px solid #fff;
+	border-radius: 100px;
+	&:hover {
+		color: #222 !important;
+		background-color: #fff;
+		border: 2px solid #fff;
+		border-radius: 100px;
+	}
+}
+@media only screen and (max-width: 426px) {
+	.cv {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, auto);
+		gap: 0em 2em;
+		grid-template-areas: "contacts" "experience" "education" "skills" "languages";
+		grid-auto-rows: minmax(min-content, max-content);
+	}
+}
