@@ -47,8 +47,8 @@ $('#calculate').click(function(event) {
 	$('#result').append('<p class="list-item">Відпрацьовано: ' + minutesToTime(total_worked) + '<p>');
 	$('#result').append('<p class="list-item">Залишилось: ' + minutesToTime((total_time * 60) - total_worked) + '<p>');
 	$('#result').append('<p class="list-item">Зробити клок-аут в:<p>');
-	$('#result').append("<p class='list-item'>\t 	UTC: " + minutesToTime(not_finished_start_time + ((total_time * 60) - total_worked)) + '<p>');
-	$('#result').append("<p class='list-item'>\t 	за Києвом: " + minutesToTime((not_finished_start_time + ((total_time * 60) - total_worked)) + (7*60) + (12*60)) + '<p>');
+	$('#result').append("<p class='list-item'> - UTC: " + minutesToTime(not_finished_start_time + ((total_time * 60) - total_worked)) + '<p>');
+	$('#result').append("<p class='list-item'> - за Києвом: " + minutesToTime((not_finished_start_time + ((total_time * 60) - total_worked)) + (7*60) + (12*60)) + '<p>');
 });
 
 function minutesToTime(minutes) {
