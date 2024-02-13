@@ -1,0 +1,52 @@
+.font{
+	font-family: 'Montserrat';
+}
+
+::placeholder {
+  color: #ddd;
+}
+
+.button{
+	color: #fff;
+    cursor: pointer;
+    border: none;
+    background-size: 300% 100%;
+	border-radius: 100px;
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.button:hover{
+	background-position: 100% 0;
+}
+
+.button:focus {
+    outline: none;
+}
+
+input[type=number]{
+	-moz-box-shadow:    inset 0 0 3px #222;
+   	-webkit-box-shadow: inset 0 0 3px #222;
+   	box-shadow:         inset 0 0 3px #222;
+	border-radius: 100px;
+	border-color: #666
+}
+
+#result{
+	transition: .5s;
+}
+
+a{
+	opacity: 0.3;
+	background: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: .5s;
+}
+a:hover{
+	opacity: 1;
+	text-decoration: none;
+}
